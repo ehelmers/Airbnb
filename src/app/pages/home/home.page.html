@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Login 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+   Welcome Back {{ Username }}
+  </div>
+
+  <div ng-hide = "isHidden">  Wrong </div>
+  <!-- this should hide the error message while the boolean isHidden is true -->
+
+
+  <ion-input placeholder="Username or email" [(ngModel)] = "email"></ion-input>
+  <ion-input placeholder = "Password" [(ngModel)] = "password"></ion-input>
+
+
+  <ion-button (click) = "navigateToExplore()"> Login </ion-button>
+  <ion-button (click) = "navigateToForgotPassword()"> Forgot Password </ion-button>
+  <ion-button (click) = "navigateToRegistration()"> Register </ion-button>
+
+
+</ion-content>
