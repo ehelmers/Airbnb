@@ -6,10 +6,47 @@
 
 <ion-content>
 
-  <ion-input placeholder="Bio!" [(ngModel)] = "Bio"></ion-input>
+  <ion-input placeholder="Explore!" [(ngModel)] = "Exlpore!"></ion-input>
 
   <ion-button (click) = "navigateToBio()"> Explore </ion-button>
   <ion-button (click) = "navigateToPropertyDetails()" > Property Details </ion-button>
+
+  <table style = "width:100%">
+    <tr> 
+      <th>ID</th>
+      <th>Price</th>
+      <th>Number of Bedrooms</th>
+      <th>Location</th>
+      <th>Image</th>
+    </tr>
+    <tr>
+      <th>1</th>
+      <th>$100</th>
+      <th>2</th>
+      <th>Alfama, Lisbon</th>
+      <th> 
+        <img src = "https://t-ec.bstatic.com/images/hotel/max1024x768/674/67459095.jpg" width="300" height="200" alt = "apartment in Alfama">
+      </th>
+    </tr>
+    <tr>
+      <th>2</th>
+      <th>$150</th>
+      <th>3</th>
+      <th>Bairre Alto, Lisbon</th>
+      <th>
+        <img src = "https://s-ec.bstatic.com/images/hotel/max1024x768/397/39766576.jpg" width="300" height="200" alt = "apartment in Bairre Alto">
+      </th>
+    </tr>
+    <tr>
+      <th>3</th>
+      <th>$200</th>
+      <th>4</th>
+      <th>Morrish Quarter, Lisbon</th>
+      <th>
+        <img src = "https://s-ec.bstatic.com/images/hotel/max1024x768/735/73580604.jpg" width="300" height="200" alt = "apartment in Moorish Quater" >
+      </th>
+    </tr>
+  </table>
 
 
 </ion-content>
